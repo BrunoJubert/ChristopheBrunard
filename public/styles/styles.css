@@ -121,10 +121,7 @@ body {
   transition: font-size 0.3s ease;
 }
 
-.musician-header.scrolled .logo-main,
-.musician-header.scrolled .logo-sub {
-  font-size: 1.6rem;
-}
+
 
 /* Accessibilité */
 .sr-only {
