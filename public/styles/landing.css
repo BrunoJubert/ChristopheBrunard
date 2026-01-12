@@ -1,0 +1,209 @@
+:root {
+  /* Couleurs */
+   --primary-dark: #533529da;
+  --primary-darker: #220d05f3;
+  --gold: #F3E8D7 ;
+  --text-light: #2c1810da;
+  --text-muted: #e0e0e0;
+  --hover-overlay: rgba(255, 255, 255, 0.1);
+
+  /* Dimensions */
+  --header-padding: 48px;
+  --navbar-padding: 24px 40px;
+  --burger-width: 35px;
+  --logo-height: 60px;
+  --header-height: 100px;
+
+  /* Effets */
+  --button-shadow: 0 2px 12px rgba(233, 69, 96, 0.15);
+  --transition-speed: 0.2s;
+  --border-radius: 24px;
+}
+
+/* --- Carrousel général --- */
+.landing-carousel {
+  padding-top: var(--header-height, 100px);
+  position: relative;
+  width: 100vw;
+  max-width: 100vw;
+  margin: 0 auto;
+  overflow: hidden;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  height: calc(100vh - var(--header-height, 100px));
+}
+
+/* --- Slides --- */
+.carousel-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.7s ease-in-out;
+  z-index: 1;
+  background: #000;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+.carousel-slide img {
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  animation: kenburns 10s infinite alternate;
+}
+
+@keyframes kenburns {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+/* --- Caption & bouton --- */
+.carousel-caption {
+  position: absolute;
+  left: 50%;
+  bottom: 110px;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  pointer-events: none;
+}
+
+.carousel-btn {
+  display: inline-block;
+  background: var(--primary-dark);
+  color: var(--text-muted);
+  border: none;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background var(--transition-speed), color var(--transition-speed);
+  user-select: none;
+  margin-bottom: 18px;
+  pointer-events: auto;
+  box-shadow: var(--button-shadow);
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+  outline: none;
+}
+
+
+.carousel-btn:hover,
+.carousel-btn:focus {
+  background: var(--gold);
+  color: var(--text-light);
+  text-decoration: none;
+}
+
+/* --- Dots --- */
+.carousel-indicators {
+  position: absolute;
+  left: 50%;
+  bottom: 56px;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+  z-index: 10;
+}
+
+.carousel-indicators .indicator {
+  width: 14px;
+  height: 14px;
+  background: var(--primary-dark);
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background 0.3s;
+  box-shadow: 0 0 4px rgba(0,0,0,0.3);
+}
+
+.carousel-indicators .indicator.active {
+  background: var(--text-muted);
+}
+
+@media (max-width: 700px) {
+  .landing-carousel {
+    padding-top: var(--header-height, 100px);
+    height: calc(100vh - var(--header-height, 100px));
+  }
+  .carousel-slide {
+    height: 100%;
+  }
+  .carousel-slide img {
+    height: 100%;
+  }
+  .carousel-caption {
+    bottom: 130px;
+    width: 100vw;
+  }
+  .carousel-btn {
+    font-size: 1rem;
+    padding: 10px 22px;
+    margin-bottom: 10px;
+  }
+  .carousel-indicators {
+    bottom: 120px;
+    gap: 8px;
+  }
+  .carousel-indicators .indicator {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (min-width: 900px) {
+  .landing-carousel {
+    height: calc(100vh - var(--header-height, 100px));
+    width: 100vw;
+    margin: 0;
+  }
+  .carousel-slide {
+    height: 100%;
+  }
+  .carousel-slide img {
+    height: 100%;
+    width: 100vw;
+    object-fit: cover;
+  }
+  .carousel-caption {
+    bottom: 80px;
+  }
+
+   .carousel-btn {
+    font-size: 1.2rem;      
+    padding: 10px 44px;     
+    margin-bottom: 24px;    
+  }
+  .carousel-indicators {
+    bottom: 25px;
+  }
+}
+
+@media (display-mode: standalone) {
+  .carousel-caption {
+    bottom: 40px; 
+  }
+  .carousel-indicators {
+    bottom: 24px; 
+  }
+}

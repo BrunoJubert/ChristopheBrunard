@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Christophe Brunard - Guitariste - Compositeur - Interprète </title>
+    <meta name="description"
+        content="Christophe Brunard, guitariste jazz à Paris.">
+
+    <!-- SEO : auteur et langue -->
+    <meta name="author" content="Christophe Brunard">
+    <meta http-equiv="Content-Language" content="fr">
+
+    <!-- Localisation régionale -->
+    <meta name="geo.region" content="FR-75">
+    <meta name="geo.placename" content="Paris, Île-de-France, France">
+    <meta name="geo.position" content="48.8566;2.3522">
+    <meta name="ICBM" content="48.8566, 2.3522">
+
+    
+    
+    <!-- Fonts et icônes -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="public/styles/styles.css">
+    <link rel="stylesheet" href="public/styles/landing.css">
+
+    <!-- JS -->
+    <script src="public/js/coockieManager.js" defer></script>
+    <script src="public/js/index.js" defer></script>
+    <script src="public/js/landing.js" defer></script>
+
+    <!-- Schema.org MusicGroup avec localisation et profils Facebook -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Artist",
+      "name": "Christophe Brunard",
+      "genre": "Jazz Manouche",
+      "founder": "Christophe Brunard",
+      "url": "https://www.christophebrunard.com/",
+      "image": "https://www.christophebrunard.com/public/assets/gallery/chris2.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "75000 Paris",
+        "addressLocality": "Paris",
+        "addressRegion": "Île-de-France",
+        "postalCode": "75000",
+        "addressCountry": "France"
+      },
+      "areaServed": "France, Île-de-France, Paris",
+    }
+    </script>
+</head>
+
+
+
+<body>
+
+
+
+
+    <header class="musician-header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html#accueil">
+                    <span class="logo-main">Christophe</span>
+                    <span class="logo-sub">BRUNARD</span>
+                </a>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#accueil">Accueil</a></li>
+                <li><a href="concerts.html">Concerts</a></li>
+                <!-- <li><a href="#projets">Projets</a></li> -->
+                <li><a href="#biographie">Biographie</a></li>
+                <li><a href="#archives">Archives</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="gallery.html">Gallerie</a></li>
+            </ul>
+            <button class="burger" id="burgerBtn" aria-label="Ouvrir le menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Carrousel d'accueil -->
+    <section id="landing-carousel" class="landing-carousel">
+        <div class="carousel-slide active">
+            <img src="public/assets/chris2.jpg" alt="Écouter un extrait" class="img-slide-1" />
+            <div class="carousel-caption">
+                <a class="carousel-btn listen-btn" href="#listenmusic">Écouter un extrait</a>
+            </div>
+        </div>
+        <div class="carousel-slide">
+            <img src="public/assets/chris1.jpg" alt="Voir les concerts" class="img-slide-2" />
+            <div class="carousel-caption">
+                <a class="carousel-btn" href="concerts.html">Voir les concerts</a>
+            </div>
+        </div>
+        <div class="carousel-slide">
+            <img src="public/assets/chris3.jpg" alt="Lire la bio" class="img-slide-3" />
+            <div class="carousel-caption">
+                <a class="carousel-btn" href="#biographie">Lire la bio</a>
+            </div>
+        </div>
+        <div class="carousel-indicators">
+            <span class="indicator active" data-slide="0"></span>
+            <span class="indicator" data-slide="1"></span>
+            <span class="indicator" data-slide="2"></span>
+        </div>
+    </section>
+
+    <main>
+        <section id="accueil" class="hero section-appear">
+            <div class="hero-layout">
+                <div class="hero-content">
+                    <h1>Bienvenue</h1>
+                    <p class="album-text">
+                        <strong>Nouvel Album :</strong>
+                        <span class="gold-text"> Origines</span>,
+                        <span class="primary-dark-text"> Christophe Brunard </span>
+                    </p>
+                    <p>
+                        À paraître en Juillet 2025, cet album vient renouer avec les "Origines" de Marius.
+                        À travers ce projet, il rend hommage à la musique de <strong>Django Reinhardt</strong>. 
+                        
+                    </p>
+                    <p>    
+                        Il est accompagné par des musiciens de talent tel que
+                        <a href="https://www.facebook.com/profile.php?id=100079060332070">Benji WINTERSTEIN</a>
+                        à la guitare rythmique et
+                        <a href="https://www.facebook.com/esteban.felix.1232"> Esteban FELIX</a>
+                        à la contrebasse .
+                        Le <strong>Christophe Brunard Trio</strong> est un projet qui oscille entre tradition et modernité. 
+                    </p>
+                    <p> Pour commander votre exemplaire au prix de <strong>15€</strong> ( frais de port non inclus et à votre charge), cliquez sur le bouton ci-dessous.
+                    </p>
+                    <div class="btn-center">
+                        <button class="see-more" id="buy-btn">Acheter l'album</button>
+                    </div>
+
+                    <div class="flip-icon-wrapper" aria-hidden="true">
+                        <p class="flip-icon-text">Cliquez sur la pochette pour découvrir les morceaux</p>
+                        <i class="fa-solid fa-arrow-rotate-right flip-icon"></i>
+                    </div>
+                    
+                </div>
+                <div class="hero-cover">
+                    <div class="flip-card" tabindex="0" aria-label="Pochette d'album cliquable">
+                        <div class="flip-card-inner" id="flip-card-inner">
+                            <div id="listenmusic" class="flip-card-front">
+                                <img src="public/assets/chris5.jpg" alt="Recto Album Origines" />
+                            </div>
+                            <div class="flip-card-back">
+                                <img class="verso-img" src="public/assets/chris6.jpg" alt="Verso Album Origines" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-center">
+                <button class="listen-btn">Écouter un extrait</button>
+            </div>
+            
+            <div class="cd-audio-banner">
+                <div class="cd-audio-wrapper" id="cd-audio-wrapper" aria-label="Visuel du CD Origines">
+                    <img id="cd-image" src="public/assets/rondelle.png" alt="CD" />
+                    <audio id="audio-player" src="public/assets/teaser-origines.mp3"></audio>
+                </div>
+            </div>
+            
+        
+            
+        </section>
+          
+
+
+
+
+        <section id="concerts" class="hero section-appear">
+            <h1>Concerts</h1>
+            <p>En concert près de chez vous</p>
+            <img src="public/assets/chris1.jpg" alt="Concerts Christophe Brunard" />
+            <!-- <button class="see-more" id="concertsBtn">
+                <span>Voir les dates</span>
+                <i class="fas fa-chevron-right"></i>
+            </button> -->
+            <!-- Conteneur pour les cartes de concerts -->
+            <div id="concertsCards" ; margin-top: 30px;>
+                <div class="concerts-grid">
+                    
+                <div class="concert-card">
+                    <h3>Le Camondo<br>61 bis rue de Monceau <br> 75008 PARIS</h3>
+                    <a href="https://www.lecamondo.fr/" target="_blank" rel="noopener" class="site-link">Visiter le site</a>
+                    <div class="concert-details">
+                        <p>Vendredi 16 Janvier 2026<br>20h / 23h</p>
+                        <p>Réservations conseillées</p>
+                    </div>
+                    <a href="tel:+33145634040" class="call-btn">Appeler</a>
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=61+bis+rue+de+Monceau+75008+PARIS" target="_blank"
+                        class="call-btn">
+                        <i class="fas fa-location-dot"></i> Y aller
+                    </a>
+                </div>
+                
+               
+                    
+                </div>
+                <a href="concerts.html" class="see-more">
+                    <span>Voir tous les concerts</span>
+                </a>
+            </div>
+            
+        </section>
+          
+
+        <!-- <section id="projets" class="hero section-appear">
+            <h1>Projets</h1>
+            <p>Nouveaux projets en cours</p>
+            <img src="./public/assets/marius-projet.JPG" alt="Projets Marius" />
+            <button class="see-more" id="projetsBtn">
+                <span>Découvrir</span>
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <div id="projetsVideos" style="display: none; margin-top: 20px;">
+                <p>
+                    Dans ce projet en trio, Marius mise sur la sincérité de la musique de Django.
+                    Ce clip a été tourné dans le cadre d'une session live au Monk, un club de jazz parisien.
+                    Il est accompagné par Raoul Gastine à la contrebasse et Bruno Jubert à la guitare rythmique.
+                </p>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/IRkZkdGwe_8" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+
+                </div>
+                <p>
+                    Ici Marius s'était produit au festival Django Reinhardt à Samois-sur-Seine en Juin 2023.
+                    Il a été accompagné par Esteban Félix à la contrebasse et Dawson Reinhardt à la guitare rythmique ainsi que Alba Obert au violon.
+                </p>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4sI26cUXukw"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                
+                </div>
+            </div>
+        </section> -->
+          
+
+        <section id="biographie" class="hero section-appear">
+            <h1>Biographie</h1>
+            <p>
+                Christophe Brunard est un guitariste interprète et compositeur né à Cehu Silvaniei, en Roumanie, en 1998. 
+             </p>
+             <!-- <p>   
+                Arrivé très jeune en France, il grandit dans un cadre propice à l’éveil artistique, entre influences familiales et découvertes personnelles.
+            </p> -->
+            <img src="public/assets/marius-bio.JPG" alt="Biographie Marius" />
+            <button class="see-more" id="lireBioBtn">
+                <span>Lire la Bio</span>
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <div id="bioTexte" style="display: none; margin-top: 20px;">
+                <div class="bio-text-container">
+                    <!-- Bloc texte gauche -->
+                    <div class="bio-text-block">
+                        <h2 class="bio-subtitle">Parcours et influences</h2>
+                        <p>
+                            Arrivé très jeune en France, il grandit dans un cadre propice à l’éveil artistique, entre influences
+                            familiales au départ et découvertes personnelles par la suite.
+                            Ses parents, soutenus et encouragés par une maîtresse de maternelle attentive à sa sensibilité, décident de
+                            l’inscrire au conservatoire de <strong>Meaux</strong> afin qu’il puisse découvrir les instruments.
+                            C’est une révélation pour <strong>Marius</strong>, qui a un coup de cœur pour la guitare classique.
+                            <br><br>
+                            Par la suite, c’est avec son grand-père, son parrain, et par sa propre écoute que <strong>Marius</strong> va
+                            se forger une oreille autour de la musique de <strong>Django Reinhardt</strong>, du jazz américain, et de la
+                            musique en général.
+                            Par son histoire, Marius renoue avec ses racines <em>tziganes</em> en découvrant la musique de Django.
+                            <br><br>
+                            Au conservatoire, il obtient une mention avec les félicitations du jury à l’unanimité pour la fin de son
+                            deuxième cycle. Son envie est de poursuivre vers la musique improvisée.
+                        </p>
+                    </div>
+                
+                    <!-- Bloc images + texte à droite -->
+                    <div class="bio-photo-block">
+                        <img src="./public/assets/marius-bio1.JPEG" alt="Biographie Marius" class="bio-main-photo" />
+                        <p>
+                            Poursuivant son parcours en explorant de multiples horizons artistiques tels que : le reggae, le rock, le
+                            blues, la funk, la musique électronique jusqu'à la musique traditionnelle mandingue, il pose ses valises à
+                            Paris, embrassant la musique de <strong>Django Reinhardt</strong> jusqu’à aujourd’hui, où il se produit dans
+                            divers jazz clubs reconnus : Monk la Taverne de Cluny, Chez Georges, Le Piano Vache.
+                        </p>
+                        <p>
+                            Au fur et à mesure des soirées parisiennes et des festivals, il fait la rencontre de grands noms reconnus
+                            mondialement de ce style tels que : <strong>Florin Niculescu, Noé Reinhardt, Sébastien Giniaux, Adrien
+                                Moignard, Mathieu Chatelain, Angelo Debarre, Aurore Voilqué, William Brunard, Benji Winterstein, Gismo
+                                Graf</strong> et bien d'autres. Ainsi, il est rapidement reconnu par ses pairs.
+                        </p>
+                    </div>
+                
+                    <!-- Bloc texte droite -->
+                    <div class="bio-text-block">
+                        <h2 class="bio-subtitle">Sur scène et en studio</h2>
+                        <p>
+                            En Juillet 2025, <strong>Marius</strong> sort un premier album hommage à <strong>Django Reinhardt</strong>,
+                            accompagné de <strong>Benji Winterstein</strong>, guitariste accompagnateur de renom, et d'<strong>Esteban
+                                Felix</strong>, un jeune contrebassiste émérite de la nouvelle génération. Un projet sincère, ancré dans
+                            la tradition et ouvert sur l’avenir.
+                            <br><br>
+                            Il se produit régulièrement en trio dans des lieux emblématiques comme <strong>Chez Georges</strong> ou
+                            <strong>Le Monk</strong>, mêlant swing et énergie personnelle. Il crée ainsi un univers musical personnel et
+                            captivant.
+                            <br><br>
+                            La suite de ses projets se tourne vers des compositions originales, tout en invitant des artistes reconnus à
+                            l’international afin d’apporter une touche <em>d’originalité et de créativité</em>.
+                            Christophe Brunard est un artiste passionné, dont le parcours témoigne d'une quête constante de sens et
+                            d'authenticité au travers de sa musique.
+                            Sa capacité à fusionner tradition et modernité en fait un musicien unique, ancré dans son temps prêt à
+                            conquérir de nouveaux horizons.
+                        </p>
+                    </div>
+                </div>
+
+            </div>     
+        </section>
+          
+
+        <section id="presse" class="hero section-appear">
+            <h1>Dossier de Presse</h1>
+            <p>
+                Vous pouvez consulter le dossier de presse de Christophe Brunard pour en savoir plus sur son parcours, ses
+                projets et ses réalisations.
+            </p>
+            <img src="public/assets/marius-presse.JPG" alt="Dossier de presse Marius" />
+            <button class="see-more" id="consulterBtn">
+                <span>Consulter</span>
+                <i class="fas fa-chevron-right"></i>
+            </button>
+              
+              
+                      
+            <div id="imagesPresse" style="display: none; margin-top: 20px;">
+                <p>
+                    Ce document contient des informations essentielles sur Christophe Brunard.
+                    Vous pourrez télécharger le dossier complet en PDF pour une consultation détaillée.          
+                </p>
+                <div id="imagesPresseWrapper">
+                    <img src="public/assets/Plaquette page1.jpg" alt="Dossier de presse 1" />
+                    <img src="public/assets/Plaquette page2.jpg" alt="Dossier de presse 2" />
+                </div>
+            </div>
+        
+            <a id="telechargerBtn" href="public/assets/plaquette.pdf" download="Dossier_presse_Marius_Bojan.pdf"
+                style="display: none; margin-top: 20px;" class="see-more">Télécharger en PDF</a>
+        </section>
+          
+          
+          
+          
+
+
+        <section id="contact" class="contact-section hero section-appear">
+            <h1>Contact</h1>
+            <form action="https://formspree.io/f/xgvygyjr" method="POST">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Sujet</label>
+                    <select id="subject" name="subject" required>
+                        <option value="" disabled selected>Sélectionnez...</option>
+                        <option value="Album">Achetez un album</option>
+                        <option value="Concerts">Demande de concert</option>
+                        <option value="Projets">Collaboration artistique</option>
+                        <option value="Presse">Presse/Interview</option>
+                        <option value="Autre">Autre demande</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+
+                <button type="submit" class="listen-btn">Envoyer</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-col social-icons">
+                <a href="https://www.instagram.com/mariusbojan_musicien/" target="_blank" rel="noopener" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/marius.bojan.3511" target="_blank" rel="noopener" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.youtube.com/@MariusBojanMusic" target="_blank" rel="noopener" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+            
+            <div class="footer-col contact-info">
+                <p>Téléphone : <a href="tel:+33778767079">07 78 76 70 79</a></p>
+                <p>Email : <a href="mailto:mariusbojancontact@icloud.com">mariusbojancontact@icloud.com</a></p>
+            </div>
+            <div class="footer-col copyright-block">
+                <p class="copyright">
+                    &copy; <span id="year"></span>
+                    <a href="https://bewvedtech.fr" target="_blank">BEWVED Tech.fr</a>
+                    Tous droits réservés.
+                </p>
+                <p class="rgpd">
+                    <a href="/politique-de-confidentialite.html">Politique de confidentialité</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+      
+      
+      
+      </body>
+
+</html>
