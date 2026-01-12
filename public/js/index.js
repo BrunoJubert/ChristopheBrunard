@@ -36,10 +36,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // --- BOUTON ACHETER L'ALBUM ---
-  const buyBtn = document.getElementById("buy-btn");
-  if (buyBtn) {
-    buyBtn.addEventListener("click", (e) => {
+  // --- BOUTON contacter ---
+  const contactBtn = document.getElementById("contactForm");
+  if (contactBtn) {
+    contactBtn.addEventListener("click", (e) => {
       e.preventDefault();
 
       // Scroll fluide vers formulaire
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
       setTimeout(() => {
         const subjectInput = document.getElementById("subject");
         if (subjectInput) {
-          subjectInput.value = "Album"; // correspond à la valeur dans ton <select>
+          subjectInput.value = "Autre"; // correspond à la valeur dans ton <select>
           subjectInput.dispatchEvent(new Event("change", { bubbles: true }));
         }
       }, 400);
@@ -141,65 +141,7 @@ document.addEventListener("DOMContentLoaded", () => {
   );
   sections.forEach((section) => observer.observe(section));
 
-  // --- AUDIO ET BOUTONS ÉCOUTER ---
-  const listenBtnCarousel = document.querySelector(
-    ".carousel-caption .listen-btn"
-  );
-  const listenBtnAccueil = document.querySelector(".btn-center .listen-btn");
-  const flipCard = document.querySelector(".flip-card");
-  const cdAudioWrapper = document.getElementById("cd-audio-wrapper");
-  const audio = document.getElementById("audio-player");
-  const cdImage = document.getElementById("cd-image");
-  const listenmusic = document.getElementById("listenmusic");
 
-  if (listenBtnCarousel) {
-    listenBtnCarousel.addEventListener("click", (e) => {
-      e.preventDefault();
-      listenmusic.scrollIntoView({ behavior: "smooth" });
-      if (flipCard.classList.contains("flipped")) {
-        flipCard.classList.remove("flipped");
-      }
-      cdAudioWrapper.style.display = "flex";
-      audio.currentTime = 0;
-      audio.play();
-    });
-  }
-
-  if (listenBtnAccueil) {
-    listenBtnAccueil.addEventListener("click", (e) => {
-      e.preventDefault();
-      if (listenBtnAccueil.textContent === "Stop") {
-        audio.pause();
-        audio.currentTime = 0;
-        cdImage.classList.remove("playing");
-        cdAudioWrapper.style.display = "none";
-        flipCard.classList.remove("flipped");
-        listenBtnAccueil.textContent = "Écouter un extrait";
-      } else {
-        if (flipCard.classList.contains("flipped")) {
-          flipCard.classList.remove("flipped");
-        }
-        cdAudioWrapper.style.display = "flex";
-        audio.currentTime = 0;
-        audio.play();
-        listenBtnAccueil.textContent = "Stop";
-      }
-    });
-  }
-
-  audio.addEventListener("play", () => {
-    cdImage.classList.remove("playing");
-    void cdImage.offsetWidth;
-    cdImage.classList.add("playing");
-    if (listenBtnAccueil) listenBtnAccueil.textContent = "Stop";
-  });
-
-  audio.addEventListener("ended", () => {
-    cdImage.classList.remove("playing");
-    cdAudioWrapper.style.display = "none";
-    flipCard.classList.remove("flipped");
-    if (listenBtnAccueil) listenBtnAccueil.textContent = "Écouter un extrait";
-  });
 
   // --- DOSSIER DE PRESSE ---
   const consulterBtn = document.getElementById("consulterBtn");

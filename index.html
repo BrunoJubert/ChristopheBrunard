@@ -124,62 +124,56 @@
             <div class="hero-layout">
                 <div class="hero-content">
                     <h1>Bienvenue</h1>
-                    <p class="album-text">
-                        <strong>Nouvel Album :</strong>
-                        <span class="gold-text"> Origines</span>,
-                        <span class="primary-dark-text"> Christophe Brunard </span>
-                    </p>
+                    
                     <p>
-                        À paraître en Juillet 2025, cet album vient renouer avec les "Origines" de Marius.
-                        À travers ce projet, il rend hommage à la musique de <strong>Django Reinhardt</strong>. 
+                        <strong>Christophe Brunard</strong> est un guitariste professionnel, compositeur et arrangeur français, reconnu principalement pour son
+                        maîtrise du jazz manouche. Il s'est formé dans les scènes mythiques du jazz parisien, de Montmartre à Saint-Germain-des-Prés. 
                         
                     </p>
                     <p>    
-                        Il est accompagné par des musiciens de talent tel que
-                        <a href="https://www.facebook.com/profile.php?id=100079060332070">Benji WINTERSTEIN</a>
-                        à la guitare rythmique et
-                        <a href="https://www.facebook.com/esteban.felix.1232"> Esteban FELIX</a>
-                        à la contrebasse .
-                        Le <strong>Christophe Brunard Trio</strong> est un projet qui oscille entre tradition et modernité. 
+                        Il déploie un répertoire impressionnant mêlant tradition gitane et créations personnelles. Son phrasé swingant et sa
+                        technique virtuose en font un musicien éclectique, capable de naviguer entre <strong>Django Reinhardt </strong>et ses propres
+                        compositions.
                     </p>
-                    <p> Pour commander votre exemplaire au prix de <strong>15€</strong> ( frais de port non inclus et à votre charge), cliquez sur le bouton ci-dessous.
+                    <p> Aujourd'hui, à travers des projets comme <strong>Brunard Connexion</strong>, accompagné de ses deux fils <a href="https://www.facebook.com/WilliamBrunardMusic/">William</a> et <a href="https://www.instagram.com/brunardjulien/">Julien</a>, il fusionne jazz manouche et influences classiques,
+                    partageant la scène avec son fils et d'autres talents. Père de musicien, il perpétue un héritage familial tout en
+                    explorant de nouveaux horizons sonores. Sa présence scénique et son swing intemporel continuent d'enchanter les amateurs
+                    de guitare gitane.
                     </p>
                     <div class="btn-center">
-                        <button class="see-more" id="buy-btn">Acheter l'album</button>
+                        <button class="see-more" id="contactForm">Contacter</button>
                     </div>
 
-                    <div class="flip-icon-wrapper" aria-hidden="true">
-                        <p class="flip-icon-text">Cliquez sur la pochette pour découvrir les morceaux</p>
-                        <i class="fa-solid fa-arrow-rotate-right flip-icon"></i>
-                    </div>
+                    
+                    
                     
                 </div>
                 <div class="hero-cover">
                     <div class="flip-card" tabindex="0" aria-label="Pochette d'album cliquable">
                         <div class="flip-card-inner" id="flip-card-inner">
                             <div id="listenmusic" class="flip-card-front">
-                                <img src="public/assets/chris5.jpg" alt="Recto Album Origines" />
+                                <img src="public/assets/chris10.png" alt="photo-intro" />
                             </div>
                             <div class="flip-card-back">
-                                <img class="verso-img" src="public/assets/chris6.jpg" alt="Verso Album Origines" />
+                                <img class="verso-img" src="public/assets/chris6.jpg" alt="photo-intro" />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="btn-center">
-                <button class="listen-btn">Écouter un extrait</button>
+            <!-- VIDÉO -->
+            <div class="video-intro">
+                <h3>Découvrez son univers</h3>
+                <p>Extrait live de <strong>Christophe Brunard</strong> en concert - pur jazz manouche.</p>
             </div>
-            
-            <div class="cd-audio-banner">
-                <div class="cd-audio-wrapper" id="cd-audio-wrapper" aria-label="Visuel du CD Origines">
-                    <img id="cd-image" src="public/assets/rondelle.png" alt="CD" />
-                    <audio id="audio-player" src="public/assets/teaser-origines.mp3"></audio>
-                </div>
+            <div class="video-preview">
+                <iframe width="100%" height="515" src="https://www.youtube.com/embed/QEUW6qsxPNY?si=sgBpE8xEl_i3AEBl"
+                    title="Extrait musical Christophe Brunard" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
             </div>
-            
-        
-            
+
         </section>
           
 
@@ -385,7 +379,6 @@
                     <label for="subject">Sujet</label>
                     <select id="subject" name="subject" required>
                         <option value="" disabled selected>Sélectionnez...</option>
-                        <option value="Album">Achetez un album</option>
                         <option value="Concerts">Demande de concert</option>
                         <option value="Projets">Collaboration artistique</option>
                         <option value="Presse">Presse/Interview</option>
