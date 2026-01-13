@@ -1,157 +1,100 @@
+/* MOBILE FIRST : 1 colonne compacte */
 .album-grid, .video-grid, .press-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-    margin: 3rem 0;
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+    margin: 2rem auto;
+    max-width: 380px;
+    padding: 0 1rem;
+    justify-content: center;
 }
 
-.album-card, .video-card {
+/* Cards moins hautes */
+.album-card, .video-card, .press-card {
     background: white;
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
 }
 
-.album-card:hover {
+.album-card:hover, .video-card:hover {
     transform: translateY(-5px);
 }
 
-.album-cover {
-    position: relative;
-    overflow: hidden;
-}
-
-.album-cover img {
+.spotify-embed iframe,
+.video-card iframe {
+    height: 400px ; 
     width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
-
-.play-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(212, 160, 23, 0.9);
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.album-card:hover .play-overlay {
-    opacity: 1;
-}
-
-.btn-spotify {
-    background: #1DB954;
-    color: white;
-    padding: 0.8rem 1.5rem;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: 600;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.btn-spotify-large {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 2rem 3rem;
-    font-size: 1.1rem;
-}
-
-.press-card {
-    background: #f8f9fa;
-    padding: 2rem;
-    border-radius: 12px;
-    border-left: 4px solid var(--primary-gold);
-}
-
-.music-buttons {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 2rem;
-}
-
-.album-card {
-    background: white;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    margin-bottom: 2rem;
 }
 
 .spotify-embed {
-    position: relative;
     border-radius: 12px 12px 0 0;
     overflow: hidden;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
 }
 
-.album-info {
-    padding: 1.5rem;
-    text-align: center;
+.spotify-cta {
+    grid-column: 1;           /* ✅ Prend toute la largeur */
+    display: flex;
+    justify-content: center;  /* ✅ Centre horizontal */
+    align-items: center;      /* ✅ Centre vertical */
+    padding: 2rem 0;          /* ✅ Espacement généreux */
+    margin-top: 1rem;
 }
 
-.album-info h3 {
-    margin: 0 0 0.5rem;
-    color: var(--primary-dark);
-    font-size: 1.3rem;
+.btn-spotify-large {
+    background: #1DB954;
+    color: white;
+    padding: 1rem 2.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(29, 185, 84, 0.3);
 }
 
-.album-info p {
-    color: #666;
-    margin-bottom: 1rem;
+.btn-spotify-large:hover {
+    background: #1ed760;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(29, 185, 84, 0.4);
 }
 
-.album-grid, .video-grid, .press-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-    margin: 3rem 0;
-    justify-content: center;
+
+
+
+
+
+/* Press card */
+.press-card {
+    background: #f8f9fa;
+    padding: 1.5rem; /* ✅ Réduit */
+    border-left: 4px solid var(--primary-gold);
 }
 
-@media (max-width: 768px) {
+/* DESKTOP : Proportions réduites aussi */
+@media (min-width: 769px) {
     .album-grid, .video-grid, .press-grid {
-        grid-template-columns: 1fr;
-        max-width: 500px;      
-        margin: 2rem auto;     
-        gap: 2.5rem;
-        padding: 0 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        max-width: 1200px;
+        gap: 2rem;
+        margin: 3rem auto;
     }
     
-    .album-card, .video-card {
-        width: 100%;
-        max-width: 100%;
+    .spotify-embed iframe,
+    .video-card iframe {
+        height: 400px 
     }
     
-    .container {
-        padding: 0 1.5rem;     
+    
+    
+    .btn-spotify-large {
+        padding: 1.2rem 3rem;
+        font-size: 1.2rem;
     }
-}
-
-/* Très petits écrans */
-@media (max-width: 480px) {
-    .album-grid {
-        max-width: 95vw;       
-        margin: 1.5rem auto;
-    }
+   
 }
