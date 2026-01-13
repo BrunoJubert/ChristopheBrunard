@@ -83,9 +83,8 @@
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html#accueil">Accueil</a></li>
                 <li><a href="concerts.html">Concerts</a></li>
-                <!-- <li><a href="#projets">Projets</a></li> -->
                 <li><a href="#biographie">Biographie</a></li>
-                <li><a href="#archives">Archives</a></li>
+                <li><a href="archives.html">Archives</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="gallery.html">Gallerie</a></li>
             </ul>
@@ -102,11 +101,11 @@
         <div class="carousel-slide active">
             <img src="public/assets/chris3.jpg" alt="Écouter un extrait" class="img-slide-1" />
             <div class="carousel-caption">
-                <a class="carousel-btn " href="#video">Écouter un extrait</a>
+                <a class="carousel-btn " href="archives.html">Écouter un extrait</a>
             </div>
         </div>
         <div class="carousel-slide">
-            <img src="public/assets/chris10.png" alt="Voir les concerts" class="img-slide-2" />
+            <img src="public/assets/chris1.jpg" alt="Voir les concerts" class="img-slide-2" />
             <div class="carousel-caption">
                 <a class="carousel-btn" href="concerts.html">Voir les concerts</a>
             </div>
@@ -124,7 +123,7 @@
         </div>
     </section>
 
-    <main>
+    <main class="theme-bg">
         <section id="accueil" class="hero section-appear">
             <div class="hero-layout">
                 <div class="hero-content">
@@ -135,11 +134,7 @@
                         maîtrise du jazz manouche. Il s'est formé dans les scènes mythiques du jazz parisien, de Montmartre à Saint-Germain-des-Prés. 
                         
                     </p>
-                    <p>    
-                        Il déploie un répertoire impressionnant mêlant tradition gitane et créations personnelles. Son phrasé swingant et sa
-                        technique virtuose en font un musicien éclectique, capable de naviguer entre <strong>Django Reinhardt </strong>et ses propres
-                        compositions.
-                    </p>
+
                     <p> Aujourd'hui, à travers des projets comme <strong>Brunard Connexion</strong>, accompagné de ses deux fils <a href="https://www.facebook.com/WilliamBrunardMusic/">William</a> et <a href="https://www.instagram.com/brunardjulien/">Julien</a>, il fusionne jazz manouche et influences classiques,
                     partageant la scène avec son fils et d'autres talents. Père de musicien, il perpétue un héritage familial tout en
                     explorant de nouveaux horizons sonores. Sa présence scénique et son swing intemporel continuent d'enchanter les amateurs
@@ -166,19 +161,6 @@
                     </div>
                 </div>
             </div>
-            <!-- VIDÉO -->
-            <div class="video-intro" id="video">
-                <h3>Découvrez son univers</h3>
-                <p>Extrait live de <strong>Christophe Brunard</strong> en concert - pur jazz manouche.</p>
-            </div>
-            <div class="video-preview">
-                <iframe width="100%" height="515" src="https://www.youtube.com/embed/QEUW6qsxPNY?si=sgBpE8xEl_i3AEBl"
-                    title="Extrait musical Christophe Brunard" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                </iframe>
-            </div>
-
         </section>
           
 
@@ -189,30 +171,35 @@
             <h1>Concerts</h1>
             <p>En concert près de chez vous</p>
             <img src="public/assets/chris1.jpg" alt="Concerts Christophe Brunard" />
-            <!-- <button class="see-more" id="concertsBtn">
-                <span>Voir les dates</span>
-                <i class="fas fa-chevron-right"></i>
-            </button> -->
-            <!-- Conteneur pour les cartes de concerts -->
             <div id="concertsCards" ; margin-top: 30px;>
-                <div class="concerts-grid">
-                    
-                <div class="concert-card">
-                    <h3>Le Camondo<br>61 bis rue de Monceau <br> 75008 PARIS</h3>
-                    <a href="https://www.lecamondo.fr/" target="_blank" rel="noopener" class="site-link">Visiter le site</a>
-                    <div class="concert-details">
-                        <p>Vendredi 16 Janvier 2026<br>20h / 23h</p>
-                        <p>Réservations conseillées</p>
+                <div class="concerts-grid"> 
+                    <div class="concert-card">
+                        <h3>Au Clairon des Chasseurs <br>3 Place Du Tertre <br> 75018 PARIS</h3>
+                        <a href="https://auclairondeschasseurs.fr/fr" target="_blank" rel="noopener" class="site-link">Visiter le site</a>
+                        <div class="concert-details">
+                            <strong>Tous les Vendredis</strong> <br> 19h / 00h</p>
+                            <p>Réservations conseillées</p>
+                        </div>
+                        <a href="tel:+33142624008" class="call-btn">Appeler</a>
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=3+Place+Du+Tertre+75018+PARIS" target="_blank"
+                            class="call-btn">
+                            <i class="fas fa-location-dot"></i> Y aller
+                        </a>
                     </div>
-                    <a href="tel:+33145634040" class="call-btn">Appeler</a>
-                    <a href="https://www.google.com/maps/dir/?api=1&destination=61+bis+rue+de+Monceau+75008+PARIS" target="_blank"
-                        class="call-btn">
-                        <i class="fas fa-location-dot"></i> Y aller
-                    </a>
-                </div>
-                
-               
-                    
+
+                    <div class="concert-card">
+                        <h3>Monk, Taverne de Cluny <br>51 rue de la Harpe <br> 75005 PARIS</h3>
+                        <a href="https://monklatavernedecluny.com/" target="_blank" rel="noopener" class="site-link">Visiter le site</a>
+                        <div class="concert-details">
+                            <strong>Tous les Dimanches</strong> <br>20h30 / 23h</p>
+                            <p>Réservations conseillées</p>
+                        </div>
+                        <a href="tel:+33143542888" class="call-btn">Appeler</a>
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=51+rue+de+la+Harpe+75005+PARIS" target="_blank"
+                            class="call-btn">
+                            <i class="fas fa-location-dot"></i> Y aller
+                        </a>
+                    </div>
                 </div>
                 <a href="concerts.html" class="see-more">
                     <span>Voir tous les concerts</span>
@@ -222,52 +209,15 @@
         </section>
           
 
-        <!-- <section id="projets" class="hero section-appear">
-            <h1>Projets</h1>
-            <p>Nouveaux projets en cours</p>
-            <img src="./public/assets/marius-projet.JPG" alt="Projets Marius" />
-            <button class="see-more" id="projetsBtn">
-                <span>Découvrir</span>
-                <i class="fas fa-chevron-right"></i>
-            </button>
-            <div id="projetsVideos" style="display: none; margin-top: 20px;">
-                <p>
-                    Dans ce projet en trio, Marius mise sur la sincérité de la musique de Django.
-                    Ce clip a été tourné dans le cadre d'une session live au Monk, un club de jazz parisien.
-                    Il est accompagné par Raoul Gastine à la contrebasse et Bruno Jubert à la guitare rythmique.
-                </p>
-                <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/IRkZkdGwe_8" title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen>
-                    </iframe>
-
-                </div>
-                <p>
-                    Ici Marius s'était produit au festival Django Reinhardt à Samois-sur-Seine en Juin 2023.
-                    Il a été accompagné par Esteban Félix à la contrebasse et Dawson Reinhardt à la guitare rythmique ainsi que Alba Obert au violon.
-                </p>
-                <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4sI26cUXukw"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                
-                </div>
-            </div>
-        </section> -->
-          
-
         <section id="biographie" class="hero section-appear">
             <h1>Biographie</h1>
             <p>
-                Christophe Brunard est un guitariste interprète et compositeur né à Cehu Silvaniei, en Roumanie, en 1998. 
+                Christophe Brunard est un guitariste interprète et compositeur originaire de Rochefort . 
              </p>
              <!-- <p>   
                 Arrivé très jeune en France, il grandit dans un cadre propice à l’éveil artistique, entre influences familiales et découvertes personnelles.
             </p> -->
-            <img src="public/assets/marius-bio.JPG" alt="Biographie Marius" />
+            <img src="public/assets/chris2.jpg" alt="Biographie Marius" />
             <button class="see-more" id="lireBioBtn">
                 <span>Lire la Bio</span>
                 <i class="fas fa-chevron-right"></i>
@@ -276,95 +226,73 @@
                 <div class="bio-text-container">
                     <!-- Bloc texte gauche -->
                     <div class="bio-text-block">
-                        <h2 class="bio-subtitle">Parcours et influences</h2>
+                        <h2 class="bio-subtitle">Formation et révélations</h2>
                         <p>
-                            Arrivé très jeune en France, il grandit dans un cadre propice à l’éveil artistique, entre influences
-                            familiales au départ et découvertes personnelles par la suite.
-                            Ses parents, soutenus et encouragés par une maîtresse de maternelle attentive à sa sensibilité, décident de
-                            l’inscrire au conservatoire de <strong>Meaux</strong> afin qu’il puisse découvrir les instruments.
-                            C’est une révélation pour <strong>Marius</strong>, qui a un coup de cœur pour la guitare classique.
+                            Formé dans les jazz clubs légendaires de Paris, Christophe Brunard a développé son jeu unique entre
+                            <strong>Montmartre</strong> et <strong>Saint-Germain-des-Prés</strong>.
+                            C'est dans ces lieux mythiques qu'il affine sa technique et son phrasé swingant, s'imprégnant de
+                            l'héritage de <strong>Django Reinhardt</strong>.
                             <br><br>
-                            Par la suite, c’est avec son grand-père, son parrain, et par sa propre écoute que <strong>Marius</strong> va
-                            se forger une oreille autour de la musique de <strong>Django Reinhardt</strong>, du jazz américain, et de la
-                            musique en général.
-                            Par son histoire, Marius renoue avec ses racines <em>tziganes</em> en découvrant la musique de Django.
-                            <br><br>
-                            Au conservatoire, il obtient une mention avec les félicitations du jury à l’unanimité pour la fin de son
-                            deuxième cycle. Son envie est de poursuivre vers la musique improvisée.
+                            Autodidacte passionné, il complète sa formation par une écoute insatiable du jazz manouche authentique
+                            et des standards américains.
+                            Sa virtuosité à la guitare rythmique et solo rapidement reconnu par ses pairs.
                         </p>
                     </div>
-                
+            
                     <!-- Bloc images + texte à droite -->
                     <div class="bio-photo-block">
-                        <img src="./public/assets/marius-bio1.JPEG" alt="Biographie Marius" class="bio-main-photo" />
+                        <img src="./public/assets/chris5.jpg" alt="Christophe Brunard sur scène" class="bio-main-photo" />
                         <p>
-                            Poursuivant son parcours en explorant de multiples horizons artistiques tels que : le reggae, le rock, le
-                            blues, la funk, la musique électronique jusqu'à la musique traditionnelle mandingue, il pose ses valises à
-                            Paris, embrassant la musique de <strong>Django Reinhardt</strong> jusqu’à aujourd’hui, où il se produit dans
-                            divers jazz clubs reconnus : Monk la Taverne de Cluny, Chez Georges, Le Piano Vache.
+                            Sur la scène parisienne, Christophe partage l'affiche avec des maîtres du jazz manouche :
+                            <strong>Christian Escoudé</strong> (album <em>Charentes</em> 2000),
+                            <strong>Florin Niculescu</strong>, <strong>Angelo Debarre</strong>, <strong>William Brunard</strong> et
+                            d'autres grandes figures.
+                            Il se produit régulièrement dans les clubs emblématiques comme <strong>Chez Georges</strong>, <strong>Le
+                                Piano Vache</strong> et <strong>Monk la Taverne de Cluny</strong>.
                         </p>
                         <p>
-                            Au fur et à mesure des soirées parisiennes et des festivals, il fait la rencontre de grands noms reconnus
-                            mondialement de ce style tels que : <strong>Florin Niculescu, Noé Reinhardt, Sébastien Giniaux, Adrien
-                                Moignard, Mathieu Chatelain, Angelo Debarre, Aurore Voilqué, William Brunard, Benji Winterstein, Gismo
-                                Graf</strong> et bien d'autres. Ainsi, il est rapidement reconnu par ses pairs.
+                            Compositeur prolifique, il signe des arrangements originaux et explore de multiples répertoires :
+                            tradition gitane, jazz américain, variété française.
+                            Sa polyvalence fait de lui un musicien recherché pour accompagner chanteurs et formations variées.
                         </p>
                     </div>
-                
+            
                     <!-- Bloc texte droite -->
                     <div class="bio-text-block">
-                        <h2 class="bio-subtitle">Sur scène et en studio</h2>
+                        <h2 class="bio-subtitle">Brunard Connexion & héritage</h2>
                         <p>
-                            En Juillet 2025, <strong>Marius</strong> sort un premier album hommage à <strong>Django Reinhardt</strong>,
-                            accompagné de <strong>Benji Winterstein</strong>, guitariste accompagnateur de renom, et d'<strong>Esteban
-                                Felix</strong>, un jeune contrebassiste émérite de la nouvelle génération. Un projet sincère, ancré dans
-                            la tradition et ouvert sur l’avenir.
+                            Fondateur de <strong>Brunard Connexion</strong>, Christophe transmet son art à la génération suivante en
+                            jouant avec ses fils <strong>William</strong> et <strong>Julien Brunard</strong>.
+                            Ce projet familial fusionne jazz manouche traditionnel et influences classiques, créant un swing unique
+                            et moderne.
                             <br><br>
-                            Il se produit régulièrement en trio dans des lieux emblématiques comme <strong>Chez Georges</strong> ou
-                            <strong>Le Monk</strong>, mêlant swing et énergie personnelle. Il crée ainsi un univers musical personnel et
-                            captivant.
+                            Arrangeur talentueux, il travaille pour divers projets musicaux et continue d'enrichir le répertoire du
+                            jazz manouche par ses compositions originales.
+                            Sa présence scénique magnétique et son toucher chaleureux continuent de séduire les amateurs de guitare
+                            gitane authentique.
                             <br><br>
-                            La suite de ses projets se tourne vers des compositions originales, tout en invitant des artistes reconnus à
-                            l’international afin d’apporter une touche <em>d’originalité et de créativité</em>.
-                            Christophe Brunard est un artiste passionné, dont le parcours témoigne d'une quête constante de sens et
-                            d'authenticité au travers de sa musique.
-                            Sa capacité à fusionner tradition et modernité en fait un musicien unique, ancré dans son temps prêt à
-                            conquérir de nouveaux horizons.
+                            Christophe Brunard incarne l'esprit du jazz manouche : <em>tradition vivante, swing intemporel,
+                                innovation dans la fidélité</em>.
                         </p>
                     </div>
                 </div>
+            </div>
 
-            </div>     
         </section>
           
 
-        <section id="presse" class="hero section-appear">
-            <h1>Dossier de Presse</h1>
+        <section id="archives" class="hero section-appear">
+            <h1>Archives</h1>
             <p>
-                Vous pouvez consulter le dossier de presse de Christophe Brunard pour en savoir plus sur son parcours, ses
-                projets et ses réalisations.
+                "Découvrez les archives complètes : 30 ans de jazz manouche, collaborations mythiques avec Christian Escoudé, Florin
+                Niculescu, et ses projets familiaux Brunard Connexion."
+
             </p>
-            <img src="public/assets/marius-presse.JPG" alt="Dossier de presse Marius" />
-            <button class="see-more" id="consulterBtn">
+            <img src="public/assets/chris3.jpg" alt="Dossier de presse Christophe Brunard" />
+            <a href="archives.html" class="see-more archives-link">
                 <span>Consulter</span>
-                <i class="fas fa-chevron-right"></i>
-            </button>
-              
-              
-                      
-            <div id="imagesPresse" style="display: none; margin-top: 20px;">
-                <p>
-                    Ce document contient des informations essentielles sur Christophe Brunard.
-                    Vous pourrez télécharger le dossier complet en PDF pour une consultation détaillée.          
-                </p>
-                <div id="imagesPresseWrapper">
-                    <img src="public/assets/Plaquette page1.jpg" alt="Dossier de presse 1" />
-                    <img src="public/assets/Plaquette page2.jpg" alt="Dossier de presse 2" />
-                </div>
-            </div>
-        
-            <a id="telechargerBtn" href="public/assets/plaquette.pdf" download="Dossier_presse_Marius_Bojan.pdf"
-                style="display: none; margin-top: 20px;" class="see-more">Télécharger en PDF</a>
+            </a>
+
         </section>
           
           
@@ -404,26 +332,10 @@
 
     <footer class="site-footer">
         <div class="footer-content">
-            <div class="footer-col social-icons">
-                <a href="https://www.instagram.com/mariusbojan_musicien/" target="_blank" rel="noopener" aria-label="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.facebook.com/marius.bojan.3511" target="_blank" rel="noopener" aria-label="Facebook">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="https://www.youtube.com/@MariusBojanMusic" target="_blank" rel="noopener" aria-label="YouTube">
-                    <i class="fab fa-youtube"></i>
-                </a>
-            </div>
-            
-            <div class="footer-col contact-info">
-                <p>Téléphone : <a href="tel:+33778767079">07 78 76 70 79</a></p>
-                <p>Email : <a href="mailto:mariusbojancontact@icloud.com">mariusbojancontact@icloud.com</a></p>
-            </div>
             <div class="footer-col copyright-block">
                 <p class="copyright">
                     &copy; <span id="year"></span>
-                    <a href="https://bewvedtech.fr" target="_blank">BEWVED Tech.fr</a>
+                    Christophe Brunard <br>
                     Tous droits réservés.
                 </p>
                 <p class="rgpd">
